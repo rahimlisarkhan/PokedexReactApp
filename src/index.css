@@ -2,3 +2,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.btn-family {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

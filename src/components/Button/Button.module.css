@@ -1,0 +1,82 @@
+.btn {
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.full {
+  width: 100%;
+}
+
+/* COLOR TYPE */
+.danger {
+  background-color: red;
+}
+
+.warning {
+  background-color: orange;
+}
+
+.primary {
+  background-color: rgb(53, 53, 255);
+}
+
+.success {
+  background-color: rgb(15, 108, 15);
+}
+
+/* SIZE TYPE */
+.small {
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+.medium {
+  padding: 8px 16px;
+  font-size: 16px;
+}
+
+.large {
+  padding: 12px 20px;
+  font-size: 20px;
+}
+
+/* Weight */
+
+.light {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.btn:disabled {
+  opacity: 0.2;
+  user-select: none !important;
+  -moz-user-select: none !important;
+  -webkit-user-select: none !important;
+  cursor: auto;
+}
+
+.btn:disabled:active {
+  transform: scale(1);
+}
