@@ -1,0 +1,32 @@
+.card {
+  border-radius: 15px;
+  width: 250px;
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: beige;
+  box-shadow: 0 0 4px 4px rgb(179, 179, 179);
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card_title {
+  font-size: 22px;
+  color: blue;
+  font-weight: bold;
+}
+
+.card_info {
+  font-size: 18px;
+  color: gray;
+}

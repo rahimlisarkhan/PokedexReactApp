@@ -1,0 +1,12 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 15px; */
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+}

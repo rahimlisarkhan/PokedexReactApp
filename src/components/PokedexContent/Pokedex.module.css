@@ -1,0 +1,24 @@
+.container {
+  margin: 10px;
+  border-radius: 10px;
+  background-color: bisque;
+}
+
+.list {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.title_winner {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.title_power {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}

@@ -11,13 +11,15 @@ export const Button = (props) => {
     children,
     fullWitdh,
     className,
+    onClick,
   } = props;
 
-  console.log(props);
+  // console.log(props);
 
   return (
     <button
       disabled={disabled}
+      onClick={onClick}
       className={`${styles.btn} ${styles[color]} ${styles[size]} ${
         styles[weight]
       } ${fullWitdh ? styles.full : ""}  ${className}`}
@@ -27,14 +29,14 @@ export const Button = (props) => {
   );
 };
 
-const myObj = {
-  age: 34,
-  // fullname: "John Doe",
-};
+// const myObj = {
+//   age: 34,
+//   // fullname: "John Doe",
+// };
 
-const { age, fullname = "Human name" } = myObj;
+// const { age, fullname = "Human name" } = myObj;
 
-console.log(fullname);
+// console.log(fullname);
 
 // function A(par1 = 5) {
 //   return par1 + 8;
