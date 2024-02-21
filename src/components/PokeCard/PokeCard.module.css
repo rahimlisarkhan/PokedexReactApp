@@ -1,7 +1,7 @@
 .card {
   border-radius: 15px;
   width: 250px;
-  height: 300px;
+  min-height: 340px;
 
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
   align-items: center;
 
   background-color: beige;
-  box-shadow: 0 0 4px 4px rgb(179, 179, 179);
+  box-shadow: 0 0 4px 4px rgb(61, 56, 56);
 }
 
 .card img {

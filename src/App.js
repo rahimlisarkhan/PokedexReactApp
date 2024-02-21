@@ -10,6 +10,9 @@ function App() {
   const [firstTeam, setFirstTeam] = useState([]);
   const [secondTeam, setSecondTeam] = useState([]);
 
+  console.log("firstTeam", firstTeam);
+  console.log("secondTeam", secondTeam);
+
   const handleStart = () => {
     let newFirstTeam = [...pokemonData];
     let newSecondTeam = [];
@@ -18,6 +21,8 @@ function App() {
       const randomIndex = Math.floor(Math.random() * newFirstTeam.length);
 
       const rmvPokemon = newFirstTeam.splice(randomIndex, 1); // [{}]
+
+      console.log("rmvPokemon", rmvPokemon);
 
       newSecondTeam.push(rmvPokemon[0]);
     }
@@ -33,6 +38,7 @@ function App() {
     (sum, item) => sum + item?.base_experience,
     0
   );
+
   const team2Power = secondTeam?.reduce(
     (sum, item) => sum + item?.base_experience,
     0
@@ -49,7 +55,9 @@ function App() {
             power={team1Power}
             pokemons={firstTeam}
           />
+
           <h2 style={{ textAlign: "center", fontSize: 60 }}>VS</h2>
+
           <PokedexContent
             isWinner={team2Power > team1Power}
             power={team2Power}
